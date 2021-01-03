@@ -30,6 +30,43 @@
 /obj/item/weapon/storage/firstaid/combat/special,
 /turf/simulated/floor/tiled/white,
 /area/ship/patrol/medbay)
+"ad" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 1
+	},
+/obj/machinery/hologram/holopad/longrange,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/patrol/cockpit)
+"ae" = (
+/obj/machinery/vending/medical/patrol{
+	dir = 1;
+	icon_state = "med"
+	},
+/obj/effect/floor_decal/borderfloorwhite,
+/obj/effect/floor_decal/corner/paleblue/border,
+/turf/simulated/floor/tiled/white,
+/area/ship/patrol/medbay)
 "af" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/r_titanium,
@@ -42,6 +79,15 @@
 	},
 /turf/simulated/wall/r_titanium,
 /area/ship/patrol/medbay)
+"ah" = (
+/obj/structure/lattice,
+/turf/simulated/floor/reinforced/airless,
+/area/ship/patrol/cockpit)
+"ai" = (
+/obj/structure/lattice,
+/obj/machinery/light/navigation/delay2,
+/turf/simulated/floor/reinforced/airless,
+/area/ship/patrol/cockpit)
 "ak" = (
 /obj/effect/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -2788,7 +2834,6 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/patrol/hallway)
 "Cj" = (
-/obj/structure/battle_data_server,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
@@ -2796,6 +2841,12 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/techfloor,
+/obj/machinery/media/music_writer{
+	pixel_y = 24
+	},
+/obj/structure/table/steel_reinforced,
+/obj/item/music_tape/custom,
+/obj/item/music_tape/custom,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/patrol/center)
 "CU" = (
@@ -2843,33 +2894,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/wall/r_titanium,
 /area/ship/patrol/center)
-"DF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10;
-	icon_state = "intact-scrubbers"
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 8
-	},
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/patrol/cockpit)
 "DN" = (
 /obj/machinery/computer/telecomms/monitor,
 /obj/effect/floor_decal/techfloor{
@@ -2934,15 +2958,6 @@
 /obj/item/weapon/bedsheet/medical,
 /turf/simulated/floor/tiled/white,
 /area/ship/patrol/medbay)
-"Fx" = (
-/obj/machinery/vending/medical/torch{
-	dir = 1;
-	icon_state = "med"
-	},
-/obj/effect/floor_decal/borderfloorwhite,
-/obj/effect/floor_decal/corner/paleblue/border,
-/turf/simulated/floor/tiled/white,
-/area/ship/patrol/medbay)
 "Gd" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/r_titanium,
@@ -2986,10 +3001,6 @@
 /obj/effect/floor_decal/corner/paleblue/border,
 /turf/simulated/floor/tiled/white,
 /area/ship/patrol/medbay)
-"HP" = (
-/obj/structure/lattice,
-/turf/space,
-/area/ship/patrol/cockpit)
 "JC" = (
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor,
@@ -3100,11 +3111,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/ship/patrol/center)
-"MQ" = (
-/obj/structure/lattice,
-/obj/machinery/light/navigation/delay2,
-/turf/space,
-/area/ship/patrol/cockpit)
 "Nc" = (
 /obj/structure/catwalk,
 /obj/structure/cable/cyan{
@@ -3445,6 +3451,9 @@
 	},
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
+	},
+/obj/machinery/computer/cryopod{
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/patrol/crew)
@@ -22390,7 +22399,7 @@ qW
 tt
 WH
 NK
-Fx
+ae
 au
 ap
 aB
@@ -26233,7 +26242,7 @@ YX
 af
 af
 km
-DF
+ad
 Lk
 af
 af
@@ -27039,11 +27048,11 @@ aa
 aa
 aa
 Ql
-HP
+ah
 aa
 aa
 aa
-HP
+ah
 Ql
 aa
 aa
@@ -27241,11 +27250,11 @@ aa
 aa
 aa
 aa
-HP
+ah
 aa
 wP
 aa
-MQ
+ai
 aa
 aa
 aa
@@ -27443,7 +27452,7 @@ aa
 aa
 aa
 aa
-MQ
+ai
 aa
 aa
 aa
